@@ -1,0 +1,4 @@
+com/example/nbodysimulation/NbodySimulationApplication.class
+com/example/nbodysimulation/controller/SimulationController.class
+com/example/nbodysimulation/model/Particle.class
+com/example/nbodysimulation/service/SimulationEngine.class
