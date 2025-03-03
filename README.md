@@ -1,6 +1,5 @@
 
 # Galaxy Simulation (n-body)
-![Uploading image.png…]()
 
 
 This project is an n-body simulation that models a galaxy-like system with a supermassive black hole at its center. The backend is developed using Java and Spring Boot, while the frontend is built with HTML, CSS, and JavaScript.
