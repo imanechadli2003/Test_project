@@ -1,7 +1,3 @@
-# Projet Test
-Below is an example of a GitHub README file for your n-body galaxy simulation project. You can adapt it to your needs:
-
----
 
 # Galaxy Simulation (n-body)
 
