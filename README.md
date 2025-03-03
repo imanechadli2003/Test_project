@@ -143,6 +143,34 @@ The project follows a clean, layered architecture:
   ```
   the report will be available at `target/site/jacoco/index.html`.
 
+  Voici la partie à ajouter dans la documentation GitHub pour décrire la qualité et les tests du projet :
+
+---
+
+## Qualité et Tests
+
+Pour garantir la robustesse et la maintenabilité de notre projet, nous avons intégré une stratégie de tests complète et des pratiques de qualité logicielle, conformément aux concepts abordés dans notre cours sur les tests, la qualité et l'intégration continue.
+
+**Tests Unitaires :**  
+- Nous utilisons **JUnit 5** et **AssertJ** pour écrire des tests unitaires qui vérifient le comportement de nos composants clés, notamment la logique de simulation dans la classe `SimulationEngine`.  
+- Ces tests assurent que chaque méthode (calcul des forces, mise à jour des positions, ajout de particules) fonctionne correctement, permettant de détecter rapidement toute anomalie et de prévenir les régressions.
+
+**Tests d’Intégration :**  
+- Grâce à **TestRestTemplate**, nous simulons des appels HTTP vers nos endpoints REST exposés par `SimulationController`.  
+- Ces tests permettent de vérifier que les différentes couches de l’application communiquent correctement, par exemple, que l'API `/api/particles` renvoie bien l'état de la simulation, que l'ajout de particules fonctionne comme prévu, et que la réinitialisation remet le système à son état initial.
+
+**Couverture de Tests :**  
+- Nous visons une couverture de tests élevée (environ 80 % ou plus) afin de nous assurer que la majorité de notre code est testé.  
+- Des outils comme **JaCoCo** peuvent être intégrés pour générer des rapports détaillés, nous aidant à identifier les zones du code nécessitant des tests supplémentaires.
+
+**Assurance Qualité et CI :**  
+- La combinaison de tests unitaires et d’intégration forme la base de notre assurance qualité, permettant de détecter rapidement les erreurs et d’éviter les régressions lors des évolutions du projet.  
+- Cette stratégie de tests s'intègre parfaitement dans une pipeline d'intégration continue (CI), garantissant que chaque modification est automatiquement vérifiée avant d'être intégrée dans la branche principale.
+
+En résumé, notre approche de tests et de qualité assure que la simulation n-body fonctionne de manière fiable et évolutive, tout en facilitant la maintenance et la collaboration à long terme.
+
+---
+
 ## CI/CD and Quality
 
 - **Integration Continuous (CI)**:
