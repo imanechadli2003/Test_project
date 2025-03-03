@@ -143,44 +143,31 @@ The project follows a clean, layered architecture:
   ```
   the report will be available at `target/site/jacoco/index.html`.
 
-  Voici la partie à ajouter dans la documentation GitHub pour décrire la qualité et les tests du projet :
-
 ---
 
-## Qualité et Tests
+## Quality and Testing
 
-Pour garantir la robustesse et la maintenabilité de notre projet, nous avons intégré une stratégie de tests complète et des pratiques de qualité logicielle, conformément aux concepts abordés dans notre cours sur les tests, la qualité et l'intégration continue.
+To ensure the robustness and maintainability of our project, we have implemented a comprehensive testing strategy and quality practices, in line with the concepts covered in our course on testing, quality, and continuous integration.
 
-**Tests Unitaires :**  
-- Nous utilisons **JUnit 5** et **AssertJ** pour écrire des tests unitaires qui vérifient le comportement de nos composants clés, notamment la logique de simulation dans la classe `SimulationEngine`.  
-- Ces tests assurent que chaque méthode (calcul des forces, mise à jour des positions, ajout de particules) fonctionne correctement, permettant de détecter rapidement toute anomalie et de prévenir les régressions.
+**Unit Tests:**  
+- We use **JUnit 5** and **AssertJ** to write unit tests that verify the behavior of our key components, particularly the simulation logic in the `SimulationEngine` class.  
+- These tests ensure that each method (force calculation, position updates, and particle addition) works correctly, allowing us to quickly detect anomalies and prevent regressions.
 
-**Tests d’Intégration :**  
-- Grâce à **TestRestTemplate**, nous simulons des appels HTTP vers nos endpoints REST exposés par `SimulationController`.  
-- Ces tests permettent de vérifier que les différentes couches de l’application communiquent correctement, par exemple, que l'API `/api/particles` renvoie bien l'état de la simulation, que l'ajout de particules fonctionne comme prévu, et que la réinitialisation remet le système à son état initial.
+**Integration Tests:**  
+- Using **TestRestTemplate**, we simulate HTTP calls to our REST endpoints exposed by the `SimulationController`.  
+- These tests verify that different layers of the application communicate properly—for example, ensuring that the `/api/particles` endpoint returns the current simulation state, that adding particles works as expected, and that resetting the simulation brings the system back to its initial state.
 
-**Couverture de Tests :**  
-- Nous visons une couverture de tests élevée (environ 80 % ou plus) afin de nous assurer que la majorité de notre code est testé.  
-- Des outils comme **JaCoCo** peuvent être intégrés pour générer des rapports détaillés, nous aidant à identifier les zones du code nécessitant des tests supplémentaires.
+**Test Coverage:**  
+- We aim for high test coverage (around 80% or more) to ensure that most of our code is tested.  
+- Tools like **JaCoCo** can be integrated to generate detailed coverage reports, helping us identify parts of the code that may need additional tests.
 
-**Assurance Qualité et CI :**  
-- La combinaison de tests unitaires et d’intégration forme la base de notre assurance qualité, permettant de détecter rapidement les erreurs et d’éviter les régressions lors des évolutions du projet.  
-- Cette stratégie de tests s'intègre parfaitement dans une pipeline d'intégration continue (CI), garantissant que chaque modification est automatiquement vérifiée avant d'être intégrée dans la branche principale.
+**Quality Assurance and CI:**  
+- The combination of unit and integration tests forms the basis of our quality assurance strategy, enabling us to detect issues early and prevent regressions as the project evolves.  
+- This testing approach is well-suited for integration into a continuous integration (CI) pipeline, ensuring that every change is automatically verified before being merged into the main branch.
 
-En résumé, notre approche de tests et de qualité assure que la simulation n-body fonctionne de manière fiable et évolutive, tout en facilitant la maintenance et la collaboration à long terme.
+In summary, our testing and quality strategy guarantees that our n-body simulation functions reliably and can be easily maintained and extended, while also facilitating long-term collaboration and continuous improvement.
 
 ---
-
-## CI/CD and Quality
-
-- **Integration Continuous (CI)**:
-  - We plan to integrate our tests into a CI pipeline (using Jenkins, GitHub Actions, or GitLab CI) to automatically run tests on each commit.
-- **Code Quality**:
-  - Our code follows Clean Architecture and SOLID principles.
-  - The project includes unit tests and integration tests to ensure robust functionality and prevent regressions.
-- **Version Control**:
-  - We use Git with frequent, atomic commits and clear commit messages, ensuring proper traceability and collaboration.
-
 ## Future Enhancements
 
 - **Algorithm Optimization**:  
