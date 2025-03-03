@@ -170,21 +170,5 @@ The project follows a clean, layered architecture:
 - **Improved CI/CD**:  
   Fully automate builds, tests, and deployments using a CI/CD pipeline.
 
-## Contributing
 
-Contributions are welcome! Please follow these steps:
-1. Fork the repository.
-2. Create your feature branch (`git checkout -b feature/my-feature`).
-3. Commit your changes (`git commit -m 'Add my feature'`).
-4. Push to the branch (`git push origin feature/my-feature`).
-5. Create a Pull Request.
 
-## License
-
-[Specify your project's license here, e.g., MIT License.]
-
----
-
-This documentation provides a comprehensive guide to the project—from setting it up and running it, to explaining its architecture, quality practices, and testing strategies—all in a manner consistent with our course's focus on tests, quality, and continuous integration.
-
-Feel free to adjust the sections and details to better match your project specifics and the requirements of your presentation.
