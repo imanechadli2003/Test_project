@@ -18,8 +18,6 @@ This project is an n-body simulation that models a galaxy-like system with a sup
 - [Testing](#testing)
 - [CI/CD and Quality](#cicd-and-quality)
 - [Future Enhancements](#future-enhancements)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Overview
 
